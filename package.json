@@ -1,0 +1,25 @@
+{
+  "name": "meteor-webpack-tool",
+  "version": "0.1.0",
+  "description": "easy to use webpack build meteor app",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thewei/meteor-webpack-tool.git"
+  },
+  "keywords": [
+    "meteor",
+    "webpack",
+    "react",
+    "meteor-webpack-tool"
+  ],
+  "author": "thewei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thewei/meteor-webpack-tool/issues"
+  },
+  "homepage": "https://github.com/thewei/meteor-webpack-tool#readme"
+}
