@@ -1,0 +1,34 @@
+{
+  "name": "spider-app",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "meteor-webpack server",
+    "build": "meteor-webpack build",
+    "meteor": "cd meteor-core && meteor --settings ../configs/meteor.development.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/thewei/spider-app.git"
+  },
+  "author": "thewei",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/thewei/spider-app#readme",
+  "buildConfig": {
+    "entry": {
+      "client": "./app/main-client.js",
+      "server": "./app/main-server.js"
+    },
+    "dist": {
+      "client": "./meteor-core/client/client.bundle.js",
+      "server": "./meteor-core/server/server.bundle.js",
+      "loadClientBundle": "./meteor-core/client/loadClientBundle.html"
+    }
+  },
+  "dependencies": {
+    "meteor-webpack": "^0.1.0",
+    "react": "^0.13.3",
+    "react-mixin": "^3.0.0"
+  }
+}

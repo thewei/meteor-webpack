@@ -1,0 +1,1 @@
+console.log('\n\nRunning on server only');
