@@ -1,19 +1,33 @@
-## meteor-webpack-tool ![NPM version](https://img.shields.io/npm/v/meteor-webpack-tool.svg?style=flat)
+## meteor-webpack ![NPM version](https://img.shields.io/npm/v/meteor-webpack.svg?style=flat)
 
 easy to use webpack build meteor app
 
 ### Installation
 ```bash
-$ npm install meteor-webpack-tool
+$ npm install meteor-webpack -g
 ```
 
 ### Example
-```js
-var meteorWebpackTool = require('meteor-webpack-tool');
+1、add config to `package.json`:
+```
+"buildConfig": {
+    "entry": {
+      "client": "./app/main-client.js",
+      "server": "./app/main-server.js"
+    },
+    "dist": {
+      "client": "./meteor-core/client/client.bundle.js",
+      "server": "./meteor-core/server/server.bundle.js",
+      "loadClientBundle": "./meteor-core/client/loadClientBundle.html"
+    }
+  }
 ```
 
-### API
-check this file: `lib/index.js`
+2、use it like this:
+```
+$ meteor-webpack server //start dev server
+$ meteor-webpack build  //build bundle js
+```
 
 ### Contributing
 - Fork this Repo first
