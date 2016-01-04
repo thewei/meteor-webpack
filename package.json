@@ -1,6 +1,6 @@
 {
   "name": "meteor-webpack",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "easy to use webpack build meteor app",
   "bin": {
     "meteor-webpack": "./bin/meteor-webpack"

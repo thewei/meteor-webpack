@@ -13,7 +13,7 @@ function nodeModulePath(p){
 
 module.exports = {
     entry: [
-        appPath('./app/main-server'),
+        pkg.buildConfig.entry.client,
     ],
     //target: 'node',
     output: {
@@ -24,7 +24,6 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.jsx'],
         alias: {
-            app: appPath('./app'),
             'babel-runtime': nodeModulePath('babel-runtime')
         },
     },
