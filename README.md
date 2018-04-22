@@ -2,6 +2,8 @@
 
 easy to use webpack build meteor app
 
+!! This project is no longer updated and you can use a better project for Webpack and Meteor integration: https://github.com/ardatan/meteor-webpack
+
 ### Installation
 ```bash
 $ npm install meteor-webpack -g
